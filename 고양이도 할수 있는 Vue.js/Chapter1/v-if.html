@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue 시작하기</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="show">Hello Vue.js!</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+    <script>
+        var app = new Vue({
+            el : "#app",
+            data : {
+                show : true, // false일 경우 DOM에서 사라짐
+            }
+        })
+    </script>
+</body>
+</html>

@@ -7,13 +7,14 @@
     <div id="app">
         <p>{{ message }}</p>
         <input v-model="message">
+        <!-- <input v-model.number="count"> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
     <script>
         var app = new Vue({
             el : "#app",
             data : {
-                message : "초기 메세지"
+                message : "초기 메세지",
             }
         })
     </script>
